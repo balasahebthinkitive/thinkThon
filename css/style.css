@@ -135,6 +135,34 @@ ul {
   margin-right: 1rem;
 }
 
+.faq-list ul > li:before {
+  content: '\f006';
+  font-family: 'FontAwesome';
+  float: left;
+  margin-left: -1.5em;
+  color: #acca38;
+  height: 1.5rem;
+  width: 1.5rem;
+  display: block;
+  float: left;
+  margin-left: -1.5rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.faq-list ul > li:before {
+  content: '\f006';
+  font-family: 'FontAwesome';
+  float: left;
+  margin-left: -1.5em;
+  color: #acca38;
+  /* background: url("../assets/img/listArrow.svg"); */
+  /* background-size: cover; */
+  background-position: center;
+  padding: 0.15rem;
+  margin-right: 1rem;
+}
+
 /* Header Section CSS stat */
 header {
   position: fixed;
@@ -723,15 +751,15 @@ header #menu-btn.is-active .line:nth-child(3) {
 }
 
 .accordion-button::after {
-  content: '\002B';
-    color: #E6E6E6;
-    font-weight: 400;
-    float: right;
-    margin-left: 5px;
-    font-size: 30px;
-    position: absolute;
-    right: 18px;
-    background-image: none !important
+  content: "\002B";
+  color: #e6e6e6;
+  font-weight: 400;
+  float: right;
+  margin-left: 5px;
+  font-size: 30px;
+  position: absolute;
+  right: 18px;
+  background-image: none !important;
 }
 .accordion-button:not(.collapsed)::after {
   content: "\2212";
@@ -743,7 +771,6 @@ header #menu-btn.is-active .line:nth-child(3) {
   position: absolute;
   right: 18px;
 }
-
 
 /* FOOTER CSS */
 
