@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thinkthon</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main>
+      <header id="main-header" class="menu-sticky">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="index.html">
+                  <img
+                    class="img-fluid"
+                    src="./assets/img/thankathon.svg"
+                    alt="img"
+                  />
+                </a>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <div class="menu-btn" id="menu-btn">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                  </div>
+                  <span class="ion-navicon"></span>
+                </button>
+                <div
+                  class="collapse navbar-collapse"
+                  id="navbarSupportedContent"
+                >
+                  <ul class="navbar-nav mr-auto w-100 justify-content-end">
+                    <li class="nav-item">
+                      <a class="nav-link" href="./index.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="gallery.html ">Gallery </a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="mentors.html">Mentors</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="homeBanner position-relative overflow-hidden">
+        <div class="galleryBgimg3 position-absolute h-100">
+          <div id="particles-js">
+            <canvas
+              class="particles-js-canvas-el"
+              width="1841"
+              height="571"
+              style="width: 100%; height: 100%"
+            ></canvas>
+          </div>
+        </div>
+        <div class="container d-table h-100">
+          <div
+            class="homeBanner__cnt h-100 d-table-cell align-middle position-relative"
+          >
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="text-left">
+                  <h6 class="thinkathon-year">
+                    Hackthon <span class="years">2023</span>
+                  </h6>
+                  <h1>
+                    A bunch of memories with
+                    <span class="greenText">Thinkheads!</span>
+                  </h1>
+                  <p class="text-white">
+                    Test your rapid prototyping and design thinking skills! Push
+                    the limits of your mind to make something amazing.
+                    <br class="d-none d-md-block" />
+                  </p>
+                  <a href="#" class="btn btn-orange view-all-Photos btn-lg ripple-effect"
+                    >View All Photos</a
+                  >
+                </div>
+              </div>
+              <div class="d">
+              <div class="galleryBgimg">
+                <img class="img-fluid" src="./assets/img/gallary_bg.png" alt="gallary_bg" />
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="how-does-it-work commonSection position-relative mb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div id="expertise" class="commonSection_header position-relative mb-5">
+                <h2 class="commonSection_title">
+                  See What Thinkheads have to say about Thinkathon
+                </h2>
+                <span class="blue-border-line">&nbsp;</span>
+              </div>
+              <div class="row">
+                <div class="col-lg-5 col-md-6 col-sm-12 col-xl-5 mb-30">
+                  <div class="content text-center position-relative">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        media="(min-width:768px)"
+                        data-srcset="./assets/img/kiran.png"
+                      />
+                      <source
+                        type="image/webp"
+                        media="(max-width:767px)"
+                        data-srcset="./assets/img/kiran.png"
+                      />
+                      <source
+                        type="image/png"
+                        media="(max-width:767px)"
+                        data-srcset="./assets/img/kiran.png"
+                      />
+                      <img
+                        class="img-fluid"
+                        height=""
+                        style="border-radius: 5px"
+                        alt="Client Video"
+                        src="./assets/img/kiran.png"
+                      />
+                    </picture>
+                    <a
+                      type="button"
+                      class="video-btn video-play-button"
+                      data-toggle="modal"
+                      data-src="https://www.youtube.com/embed/kTqHMTb_Vek"
+                      data-target="#myModal"
+                    >
+                      <span class="icon-play"></span>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-12 col-xl-2 mb-30">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="content text-center position-relative">
+                        <picture>
+                          <source
+                            type="image/webp"
+                            media="(min-width:768px)"
+                            data-srcset="./assets/img/mojib-video.png"
+                          />
+                          <source
+                            type="image/webp"
+                            media="(max-width:767px)"
+                            data-srcset="./assets/img/mojib-video.png"
+                          />
+                          <source
+                            type="image/png"
+                            media="(max-width:767px)"
+                            data-srcset="./assets/img/mojib-video.png"
+                          />
+                          <img
+                            class="img-fluid"
+                            height=""
+                            style="border-radius: 5px"
+                            alt="Client Video"
+                            src="./assets/img/mojib-video.png"
+                          />
+                        </picture>
+                        <a
+                          type="button"
+                          class="video-btn video-play-button"
+                          data-toggle="modal"
+                          data-src="https://www.youtube.com/embed/kTqHMTb_Vek"
+                          data-target="#myModal"
+                        >
+                          <span class="icon-play"></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="content text-center position-relative">
+                        <picture>
+                          <source
+                            type="image/webp"
+                            media="(min-width:768px)"
+                            data-srcset="./assets/img/story-ravi.png"
+                          />
+                          <source
+                            type="image/webp"
+                            media="(max-width:767px)"
+                            data-srcset="./assets/img/story-ravi.png"
+                          />
+                          <source
+                            type="image/png"
+                            media="(max-width:767px)"
+                            data-srcset="./assets/img/story-ravi.png"
+                          />
+                          <img
+                            class="img-fluid"
+                            height=""
+                            style="border-radius: 5px"
+                            alt="Client Video"
+                            src="./assets/img/story-ravi.png"
+                          />
+                        </picture>
+                        <a
+                          type="button"
+                          class="video-btn video-play-button"
+                          data-toggle="modal"
+                          data-src="https://www.youtube.com/embed/kTqHMTb_Vek"
+                          data-target="#myModal"
+                        >
+                          <span class="icon-play"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-5 col-md-6 col-sm-12 col-xl-5 mb-30">
+                  <div class="content text-center position-relative">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        media="(min-width:768px)"
+                        data-srcset="./assets/img/pooja-img.png"
+                      />
+                      <source
+                        type="image/webp"
+                        media="(max-width:767px)"
+                        data-srcset="./assets/img/pooja-img.png"
+                      />
+                      <source
+                        type="image/png"
+                        media="(max-width:767px)"
+                        data-srcset="./assets/img/pooja-img.png"
+                      />
+                      <img
+                        class="img-fluid"
+                        height=""
+                        style="border-radius: 5px"
+                        alt="Client Video"
+                        src="./assets/img/pooja-img.png"
+                      />
+                    </picture>
+                    <a
+                      type="button"
+                      class="video-btn video-play-button"
+                      data-toggle="modal"
+                      data-src="https://www.youtube.com/embed/kTqHMTb_Vek"
+                      data-target="#myModal"
+                    >
+                      <span class="icon-play"></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer
+        class="footerarea position-relative"
+        id="footer"
+        style="background-color: #252525"
+      >
+        <div class="container">
+          <div class="footer--section__location">
+            <div class="row">
+              <div class="col-md-4 col-sm-12 col-xs-12">
+                <div class="count-flag">
+                  <img
+                    alt="IND"
+                    width="38"
+                    height="24"
+                    src="./assets/img/india.svg"
+                  />
+                </div>
+                <h4 class="footer-sub-heading los-angeles-back">
+                  INDIA (Register office address HQ)
+                </h4>
+                <div class="footer-addre-content">
+                  <p>
+                    4<sup>th</sup> Floor, ABIL Imperial Commercial Spaces, Near
+                    Murkute Garden, <br />Baner, Pune – 411045 <br />
+                    Sales:
+                    <span itemprop="telephone "
+                      ><a
+                        href="tel:+919172753107 "
+                        title="Contact to Thinkitive Sales"
+                      >
+                        <i class="icon-phone3"></i> +91 91727 53107</a
+                      ></span
+                    >
+                    <br />
+                    HR:
+                    <span itemprop="telephone "
+                      ><a
+                        href="tel:+918956775372 "
+                        title="Contact to Thinkitive HR"
+                      >
+                        <i class="icon-phone3"></i> +91 89567 75372</a
+                      ></span
+                    >
+                    <br /><a
+                      href="mailto:hello@thinkitive.com "
+                      class="nott"
+                      title="Mail to Thinkitive"
+                      ><i class="icon-envelope2"></i> hello@thinkitive.com
+                    </a>
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-12 col-xs-12">
+                <div class="count-flag">
+                  <img
+                    alt="IND"
+                    width="38"
+                    height="24"
+                    src="./assets/img/india.svg"
+                  />
+                </div>
+                <h4 class="footer-sub-heading new-yoar-back">INDIA</h4>
+                <div class="footer-addre-content">
+                  <p>
+                    8<sup>th</sup> Floor, Office No. 808, C Wing, Teerth
+                    Technospace, Bengaluru - Mumbai Hwy, <br />Baner, Pune –
+                    411045 <br />
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-12 col-xs-12">
+                <div class="count-flag">
+                  <img
+                    alt="USA"
+                    width="38"
+                    height="24"
+                    src="/united-states.4465a5a1.svg"
+                  />
+                </div>
+                <h4 class="footer-sub-heading new-yoar-back">USA</h4>
+                <div class="footer-addre-content">
+                  <p>
+                    81 Livingston Ave, Edison NJ, USA - 08820<br /><span
+                      itemprop="telephone"
+                      ><a href="tel:+18327693856">
+                        <i class="icon-phone3"></i> +1 (832) 769-3856</a
+                      ></span
+                    >
+                    <br />
+                    <a href="mailto:hello@thinkitive.com" class="nott"
+                      ><i class="icon-envelope2"></i> hello@thinkitive.com
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer--section__social">
+            <div class="row">
+              <div class="col-lg-4 col-md-6">
+                <div class="row">
+                  <div class="col-sm-6 col-xs-12">
+                    <div class="footer-logo">
+                      <a href="/" class="standard-logo">
+                        <img
+                          src="./assets/img/thinkathon-small-logo.png"
+                          width="180"
+                          height="auto"
+                          alt="Thinkitive Logo"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-xs-12">
+                    <div class="ios-logo">
+                      <img
+                        class="lazyloaded ls-is-cached"
+                        src="./assets/img/ISO_thinkitive.png"
+                        width="68"
+                        height="68"
+                        alt="iso logo"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-5 col-md-6">
+                <div class="otherlinks">
+                  <ul>
+                    <li>
+                      <a href="/privacy-policy.html" title="Privacy Policy"
+                        >Privacy Policy</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="/terms-and-conditions.html"
+                        title="Terms and Conditions"
+                        >Terms &amp; Conditions</a
+                      >
+                    </li>
+                    <li><a href="/sitemap.html" title="Sitemap">Sitemap</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="social-links">
+                  <div class="clearfix right">
+                    <a
+                      href="https://facebook.com/thinkitivetech"
+                      target="_blank"
+                      class="si-borderless si-facebook si-small social-icon"
+                      title="Go to Thinkitive Facebook Profile"
+                    >
+                      <i class="icon-facebook"></i>
+                      <i class="icon-facebook"></i>
+                    </a>
+                    <a
+                      href="#"
+                      target="_blank"
+                      class="si-borderless si-small si-twitter social-icon"
+                      title="Go to Thinkitive Twitter Profile"
+                    >
+                      <i class="icon-twitter"></i> <i class="icon-twitter"></i>
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/company/thinkitive"
+                      target="_blank"
+                      class="si-borderless si-linkedin si-small social-icon"
+                      title="Go to Thinkitive Linkdin Profile"
+                    >
+                      <i class="icon-linkedin"></i>
+                      <i class="icon-linkedin"></i>
+                    </a>
+                    <a
+                      href="https://www.instagram.com/thinkitivetech/"
+                      target="_blank"
+                      class="si-borderless si-instagram si-small social-icon"
+                      title="Go to Thinkitive Instagram Profile"
+                    >
+                      <i class="icon-instagram"></i>
+                      <i class="icon-instagram"></i>
+                    </a>
+                    <a
+                      href="https://www.youtube.com/channel/UCn6HVTA5fxUc_nllLhE9f7Q"
+                      target="_blank"
+                      class="si-borderless si-small si-youtube social-icon"
+                      title="Go to Thinkitive Youtube Profile"
+                    >
+                      <i class="icon-youtube"></i> <i class="icon-youtube"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="copyrightsText" style="background-color: rgba(0, 0, 0, 0.2)">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="copyrights-text text-center">
+                  Copyrights © 2022 Thinkitive Technologies Pvt. Ltd. All Rights
+                  Reserved.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="./js/main.js"></script>
+
+    <script>
+      e(window).on("load", function (a) {
+        function t() {
+          var a = e("#main-header").height();
+          e(".iq-height").css("height", a + "px");
+        }
+        e("ul.page-numbers").addClass("justify-content-center"),
+          e("#load").fadeOut(),
+          e("#loading").delay(0).fadeOut("slow"),
+          $(".navbar-nav li a").on("click", function (e) {
+            var a = $(this);
+            $("html, body")
+              .stop()
+              .animate(
+                {
+                  scrollTop: $(a.attr("href")).offset().top - 0,
+                },
+                1500
+              ),
+              e.preventDefault();
+          }),
+          e(function () {
+            var a = e("#main-header");
+            t(),
+              e(window).resize(t),
+              e(window).on("scroll", function () {
+                e(window).scrollTop() >= 80
+                  ? a.addClass("menu-sticky animated slideInDown")
+                  : a.removeClass("menu-sticky animated slideInDown");
+              });
+          }),
+          $(document).ready(function () {
+            $(".navbar-nav li a").on("click", function () {
+              $(".navbar-nav li a.active").removeClass("active"),
+                $(this).addClass("active");
+            });
+          }),
+          $(".nav-item.dropdown").mouseenter(function () {
+            $(this).addClass("menu-show");
+          }),
+          $(".nav-item.dropdown").mouseleave(function () {
+            $(this).removeClass("menu-show");
+          }),
+          e(document).ready(function () {
+            e(".menu-btn").click(function () {
+              e(this).toggleClass("is-active");
+            });
+          }),
+          e(".feature-box-effect").mouseenter(function () {
+            e(".selected")
+              .removeClass("selected")
+              .addClass("feature-box-effect"),
+              e(this).removeClass("feature-box-effect").addClass("selected");
+          }),
+          e(".isotope").isotope({
+            itemSelector: ".iq-grid-item",
+          }),
+          e(".isotope-filters").on("click", "button", function () {
+            var a = e(this).attr("data-filter");
+            e(".isotope").isotope({
+              resizable: !0,
+              filter: a,
+            }),
+              e(".isotope-filters button").removeClass("show active"),
+              e(this).addClass("show active");
+          });
+      });
+    </script>
+  </body>
+</html>

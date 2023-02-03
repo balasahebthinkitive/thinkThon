@@ -1,12 +1,788 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Thinkthon</title>
-</head>
-<body>
-    <h1>Hello</h1>
-</body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/videoplaybtn.css" />
+  </head>
+  <body>
+    <main>
+      <header id="main-header" class="menu-sticky">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="index.html">
+                  <img
+                    class="img-fluid"
+                    src="./assets/img/thankathon.svg"
+                    alt="img"
+                  />
+                </a>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <div class="menu-btn" id="menu-btn">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                  </div>
+                  <span class="ion-navicon"></span>
+                </button>
+                <div
+                  class="collapse navbar-collapse"
+                  id="navbarSupportedContent"
+                >
+                  <ul class="navbar-nav mr-auto w-100 justify-content-end">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Events</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="gallery.html ">Gallery </a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="mentors.html">Mentors</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="homeBanner position-relative overflow-hidden">
+        <div class="img-wrapper position-absolute h-100">
+          <!-- particles.js container -->
+          <div id="particles-js">
+            <canvas
+              class="particles-js-canvas-el"
+              width="1841"
+              height="571"
+              style="width: 100%; height: 100%"
+            ></canvas>
+          </div>
+        </div>
+        <div class="container d-table h-100">
+          <div
+            class="homeBanner__cnt h-100 d-table-cell align-middle position-relative"
+          >
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="text-left">
+                  <h6 class="thinkathon-year">
+                    Thinkathon <span class="years">2023</span>
+                  </h6>
+                  <h1>
+                    A Techfest for <span class="greenText">Thinkheads!</span>
+                  </h1>
+                  <p class="text-white">
+                    Test your rapid prototyping and design thinking skills! Push
+                    the limits of your mind to make something amazing.
+                    <br class="d-none d-md-block" />
+                  </p>
+                  <a href="#" class="btn btn-orange btn-lg ripple-effect"
+                    >February 04, 2023 – February 05, 2023</a
+                  >
+                  <div class="banner_btn d-lg-flex mt-5 ali position-relative">
+                    <a id="play-video" class="video-play-button" href="#">
+                      <span></span>
+                    </a>
+                    <a href="#" class="thinkathon-trailer"
+                      >Play our <span>Thinkathon</span> trailer</a
+                    >
+
+                    <div id="video-overlay" class="video-overlay">
+                      <a class="video-overlay-close">&times;</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="col-lg-6">
+                <img src="./assets/img/thinkthon-bg.svg" alt="" />
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="how-does-it-work commonSection position-relative">
+        <div class="clients-corner_circle"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div id="expertise" class="commonSection_header">
+                <h2 class="commonSection_title">How Does it Work?</h2>
+                <span class="blue-border-line">&nbsp;</span>
+              </div>
+            </div>
+            <div class="executionSec_inner"></div>
+            <div class="executionSec_inner2"></div>
+
+            <div class="row align-items-center iq-mb-20 expertise-wrapper">
+              <div class="col-lg-6">
+                <div class="contextSection">
+                  <h2>1. Understand the Problem</h2>
+                  <p>
+                    Pick a chit & start brainstorming. Each chit gives you some
+                    info about problem statement, and get into discussion with
+                    your team.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-6 text-center">
+                <div class="m-atuo iot-sol-sec image">
+                  <img src="./assets/img/amico.svg" alt="" />
+                </div>
+              </div>
+
+              <div class="col-lg-6 text-center">
+                <div class="m-atuo iot-sol-sec image">
+                  <img src="./assets/img/cuate.svg" alt="" />
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="contextSection">
+                  <h2>2. Ideate & Sketch Solutions</h2>
+                  <p>
+                    Once you’ve got a grasp on the problem, sketch out your
+                    ideas. Create affinity diagrams, do some card sorting, draw
+                    up some mockups – keep iterating, whichever way works best
+                    for you!
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="contextSection">
+                  <h2>3. Race to realize it digitally</h2>
+                  <p>
+                    After you’ve nailed your sketches, bring it up to
+                    high-fidelity, prototype it and deliver the designs to
+                    developers and start coding.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-6 text-center">
+                <div class="m-atuo iot-sol-sec image">
+                  <img src="./assets/img/cuate44.svg" alt="" />
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="contextSection text-center">
+                  <h2>4. Submit & Win Cash Prize!</h2>
+                  <p>
+                    After you’ve nailed your project, deploy your code and
+                    submit your project. You can win cash prize up to ₹65,000.
+                  </p>
+                </div>
+                <div class="winnerImg">
+                  <img src="./assets/img/winner.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="thinkitiveLogoSection">
+        <div class="thinitivelogo text-center">
+          <img src="./assets/img/thinkitive_writeLogo.svg" alt="" />
+        </div>
+        <!-- <div class="subHeading text-center">
+          <h2>Winner takes it all loser has to fall</h2>
+        </div> -->
+      </section>
+
+      <section class="rules-regulations commonSection">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div id="expertise" class="commonSection_header">
+                <h2 class="commonSection_title">Rules and Regulations</h2>
+                <span class="blue-border-line">&nbsp;</span>
+              </div>
+              <div class="uvp-list">
+                <ul>
+                  <li>
+                    All team members should be present 30 minutes before start
+                    time.
+                  </li>
+                  <li>
+                    All team members should be present at the event. Leaving the
+                    venue for some time to hack elsewhere is fine.
+                  </li>
+                  <li>
+                    All work on a project should be done during the hackathon.
+                  </li>
+                  <li>Teams must stop hacking once the time is up. </li>
+                  <li>
+                    Team will record video of application features and
+                    screenshots and the video  should be less than 8 to 10
+                    minutes in length.
+                  </li>
+                  <li>
+                    Team Lead will make sure he/she will have access of all
+                    resources which will required during hackathon event i.e
+                    Repository , AWS services etc
+                  </li>
+                  <li>
+                    Any software development tools, game engine, IDE, and/or
+                    programming language can be used for the event.
+                  </li>
+                  <li class="">
+                    All project artefacts should be submitted to the hackathon
+                    GitHub account (TBA) before judging begins. Failure to
+                    submit will result in disqualification. Code should be
+                    committed regularly throughout the hackathon to the team
+                    repository.
+                  </li>
+                  <li>
+                    Any intellectual property developed during and within the
+                    scope of the hackathon must be open source and licensed
+                    under one of the licenses referenced in
+                    <a href="https://opensource.org/licenses"></a>.
+                  </li>
+                  <li>Team can use boilerplate code with proper git commit.</li>
+                  <li>
+                    A team can use multiple licenses in the application. For
+                    example, the public code used could be licensed under the
+                    Apache license agreement whereas the code written by the
+                    team for the application licensed under the MIT license
+                    agreement.
+                  </li>
+                  <li>
+                    Any kind of client (past & present) code should never ever
+                    ever be used, this will lead to disqualification.
+                  </li>
+                  <li>
+                    Any secret key should not get exposed on the github
+                    repository.
+                  </li>
+                  <li>
+                    Any kind of client (past & present) code should never ever
+                    ever be used, this will lead to disqualification.
+                  </li>
+                  <li>Bring your Thinkitive ID card.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="questions-mind">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="div-block-106">
+                <h1>
+                  Have some questions in <span class="text-span-31">Mind?</span>
+                </h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="commonSection faq-section stacks-gutter">
+        <div class="container demo">
+          <!-- <div class="row">
+            <div class="col col-lg-12 col-md-12 col-sm-12">
+              <div class="commonSection_header">
+                <h2 class="commonSection_title h2_head">
+                  Frequently Ask Questions on
+                  <span class="blue-text"> Staff Augmentation</span>
+                </h2>
+                <span class="blue-border-line">&nbsp;</span>
+              </div>
+            </div>
+          </div> -->
+          <div class="faqSection">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="accordion" id="accordionExample">
+                    <div class="accordion_head accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button
+                          class="accordion-button"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseOne"
+                          aria-expanded="true"
+                          aria-controls="collapseOne"
+                        >
+                          Question text goes here
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseOne"
+                        class="accordion-collapse collapse show"
+                        aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample"
+                        style=""
+                      >
+                        <div class="accordion-body">
+                          Vitae eu tortor ullamcorper cursus ultricies
+                          consectetur integer vivamus cursus. Faucibus enim
+                          venenatis at a pulvinar. Turpis mauris rhoncus lorem
+                          sodales semper tincidunt etiam. Sed quis faucibus
+                          pellentesque amet. Risus nisl purus quam semper elit
+                          purus cras. Turpis augue nulla mauris odio etiam
+                          lectus scelerisque dapibus. Donec metus mi quisque
+                          amet commodo sit auctor non tristique. Pharetra id
+                          donec diam lacus. Sed commodo ullamcorper egestas
+                          velit risus auctor consectetur varius. Hendrerit
+                          auctor fringilla in lectus diam ultricies sem.
+                          Eleifend nunc ipsum ultrices tortor. At tristique eget
+                          viverra lectus feugiat eget sed. Mi imperdiet diam
+                          turpis odio congue sed. Tristique at enim at sed
+                          lobortis auctor vitae. Vehicula tristique lectus
+                          lectus hac orci praesent ut.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion_head accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseTwo"
+                          aria-expanded="false"
+                          aria-controls="collapseTwo"
+                        >
+                          Question text goes here
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseTwo"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="accordion-body">
+                          We allow you to conduct as many interviews as possible
+                          before hiring your preferred developer from us. Once
+                          you approve, our hired remote developers will work as
+                          your dedicated resources from our cutting-edge
+                          development center. You have complete control over the
+                          resource while we handle developer retention,
+                          administrative support, and infrastructure. We sign
+                          NDAs to ensure that your concept and project are safe
+                          with us.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion_head accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseThree"
+                          aria-expanded="false"
+                          aria-controls="collapseThree"
+                        >
+                          Question text goes here
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseThree"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="accordion-body">
+                          Thinkitive appoints professional project managers to
+                          serve as a single point of contact for all
+                          requirements.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion_head accordion-item">
+                      <h2 class="accordion-header" id="headingFour">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseFour"
+                          aria-expanded="false"
+                          aria-controls="collapseFour"
+                        >
+                          Question text goes here
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseFour"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="accordion-body">
+                          Yes, you can hire dedicated remote engineers who work
+                          following your deadline, milestone and your time zone
+                          (EST/PST/CST/MST). Please get in touch with us at
+                          sales@thinkitive.com for further details.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion_head accordion-item">
+                      <h2 class="accordion-header" id="headingFive">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseFive"
+                          aria-expanded="false"
+                          aria-controls="collapseFive"
+                        >
+                          Question text goes here
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseFive"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingFive"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="accordion-body">
+                          A dynamic IT staffing approach enables your business
+                          with additional personnel or a required tech stack. It
+                          maintains flexibility and cost-effectiveness in
+                          decision-making.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="contact-now"></div>
+      </section>
+
+      <footer class="footerarea" id="footer" style="background-color: #252525">
+        <div class="container">
+          <div class="row">
+            <ul class="footerNavbar">
+              <li class="text-white">
+                <a href="#"> Event</a>
+              </li>
+              <li class="text-white">
+                <a href="">Gallery</a>
+              </li>
+              <li class="text-white">
+                <a href="">Mentors</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer--section__location">
+            <div class="row">
+              <div class="col-md-4 col-sm-12 col-xs-12">
+                <div class="count-flag">
+                  <img
+                    alt="IND"
+                    width="38"
+                    height="24"
+                    src="./assets/img/india.svg"
+                  />
+                </div>
+                <h4 class="footer-sub-heading los-angeles-back">
+                  INDIA (Register office address HQ)
+                  <span class="break-tag"><br /></span>
+                </h4>
+                <div class="footer-addre-content">
+                  <p>
+                    4<sup>th</sup> Floor, ABIL Imperial Commercial Spaces, Near
+                    Murkute Garden, <br />Baner, Pune – 411045 <br />
+                    Sales:
+                    <span itemprop="telephone "
+                      ><a
+                        href="tel:+919172753107 "
+                        title="Contact to Thinkitive Sales"
+                      >
+                        <i class="icon-phone3"></i> +91 91727 53107</a
+                      ></span
+                    >
+                    <br />
+                    HR:
+                    <span itemprop="telephone "
+                      ><a
+                        href="tel:+918956775372 "
+                        title="Contact to Thinkitive HR"
+                      >
+                        <i class="icon-phone3"></i> +91 89567 75372</a
+                      ></span
+                    >
+                    <br /><a
+                      href="mailto:hello@thinkitive.com "
+                      class="nott"
+                      title="Mail to Thinkitive"
+                      ><i class="icon-envelope2"></i> hello@thinkitive.com
+                    </a>
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-12 col-xs-12">
+                <div class="count-flag">
+                  <img
+                    alt="IND"
+                    width="38"
+                    height="24"
+                    src="./assets/img/india.svg"
+                  />
+                </div>
+                <h4 class="footer-sub-heading new-yoar-back">INDIA</h4>
+                <div class="footer-addre-content">
+                  <p>
+                    8<sup>th</sup> Floor, Office No. 808, C Wing, Teerth
+                    Technospace, Bengaluru - Mumbai Hwy, <br />Baner, Pune –
+                    411045 <br />
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-12 col-xs-12">
+                <div class="count-flag">
+                  <img
+                    alt="USA"
+                    width="38"
+                    height="24"
+                    src="/united-states.4465a5a1.svg"
+                  />
+                </div>
+                <h4 class="footer-sub-heading new-yoar-back">USA</h4>
+                <div class="footer-addre-content">
+                  <p>
+                    81 Livingston Ave, Edison NJ, USA - 08820<br /><span
+                      itemprop="telephone"
+                      ><a href="tel:+18327693856">
+                        <i class="icon-phone3"></i> +1 (832) 769-3856</a
+                      ></span
+                    >
+                    <br />
+                    <a href="mailto:hello@thinkitive.com" class="nott"
+                      ><i class="icon-envelope2"></i> hello@thinkitive.com
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer--section__social">
+            <div class="row">
+              <div class="col-lg-4 col-md-6">
+                <div class="row">
+                  <div class="col-sm-6 col-xs-12">
+                    <div class="footer-logo">
+                      <a href="/" class="standard-logo">
+                        <img
+                          src="./assets/img/thinkathon-small-logo.png"
+                          width="180"
+                          height="auto"
+                          alt="Thinkitive Logo"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-xs-12">
+                    <div class="ios-logo">
+                      <img
+                        class="lazyloaded ls-is-cached"
+                        src="./assets/img/ISO_thinkitive.png"
+                        width="68"
+                        height="68"
+                        alt="iso logo"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-5 col-md-6">
+                <div class="otherlinks">
+                  <ul>
+                    <li>
+                      <a href="/privacy-policy.html" title="Privacy Policy"
+                        >Privacy Policy</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="/terms-and-conditions.html"
+                        title="Terms and Conditions"
+                        >Terms &amp; Conditions</a
+                      >
+                    </li>
+                    <li><a href="/sitemap.html" title="Sitemap">Sitemap</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="social-links">
+                  <div class="clearfix right">
+                    <a
+                      href="https://facebook.com/thinkitivetech"
+                      target="_blank"
+                      class="si-borderless si-facebook si-small social-icon"
+                      title="Go to Thinkitive Facebook Profile"
+                    >
+                      <i class="icon-facebook"></i>
+                      <i class="icon-facebook"></i>
+                    </a>
+                    <a
+                      href="#"
+                      target="_blank"
+                      class="si-borderless si-small si-twitter social-icon"
+                      title="Go to Thinkitive Twitter Profile"
+                    >
+                      <i class="icon-twitter"></i> <i class="icon-twitter"></i>
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/company/thinkitive"
+                      target="_blank"
+                      class="si-borderless si-linkedin si-small social-icon"
+                      title="Go to Thinkitive Linkdin Profile"
+                    >
+                      <i class="icon-linkedin"></i>
+                      <i class="icon-linkedin"></i>
+                    </a>
+                    <a
+                      href="https://www.instagram.com/thinkitivetech/"
+                      target="_blank"
+                      class="si-borderless si-instagram si-small social-icon"
+                      title="Go to Thinkitive Instagram Profile"
+                    >
+                      <i class="icon-instagram"></i>
+                      <i class="icon-instagram"></i>
+                    </a>
+                    <a
+                      href="https://www.youtube.com/channel/UCn6HVTA5fxUc_nllLhE9f7Q"
+                      target="_blank"
+                      class="si-borderless si-small si-youtube social-icon"
+                      title="Go to Thinkitive Youtube Profile"
+                    >
+                      <i class="icon-youtube"></i> <i class="icon-youtube"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="copyrightsText" style="background-color: rgba(0, 0, 0, 0.2)">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="copyrights-text text-center">
+                  Copyrights © 2022 Thinkitive Technologies Pvt. Ltd. All Rights
+                  Reserved.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/videoplaybtn.js"></script>
+
+    <script>
+      e(window).on("load", function (a) {
+        function t() {
+          var a = e("#main-header").height();
+          e(".iq-height").css("height", a + "px");
+        }
+        e("ul.page-numbers").addClass("justify-content-center"),
+          e("#load").fadeOut(),
+          e("#loading").delay(0).fadeOut("slow"),
+          $(".navbar-nav li a").on("click", function (e) {
+            var a = $(this);
+            $("html, body")
+              .stop()
+              .animate(
+                {
+                  scrollTop: $(a.attr("href")).offset().top - 0,
+                },
+                1500
+              ),
+              e.preventDefault();
+          }),
+          e(function () {
+            var a = e("#main-header");
+            t(),
+              e(window).resize(t),
+              e(window).on("scroll", function () {
+                e(window).scrollTop() >= 80
+                  ? a.addClass("menu-sticky animated slideInDown")
+                  : a.removeClass("menu-sticky animated slideInDown");
+              });
+          }),
+          $(document).ready(function () {
+            $(".navbar-nav li a").on("click", function () {
+              $(".navbar-nav li a.active").removeClass("active"),
+                $(this).addClass("active");
+            });
+          }),
+          $(".nav-item.dropdown").mouseenter(function () {
+            $(this).addClass("menu-show");
+          }),
+          $(".nav-item.dropdown").mouseleave(function () {
+            $(this).removeClass("menu-show");
+          }),
+          e(document).ready(function () {
+            e(".menu-btn").click(function () {
+              e(this).toggleClass("is-active");
+            });
+          }),
+          e(".feature-box-effect").mouseenter(function () {
+            e(".selected")
+              .removeClass("selected")
+              .addClass("feature-box-effect"),
+              e(this).removeClass("feature-box-effect").addClass("selected");
+          }),
+          e(".isotope").isotope({
+            itemSelector: ".iq-grid-item",
+          }),
+          e(".isotope-filters").on("click", "button", function () {
+            var a = e(this).attr("data-filter");
+            e(".isotope").isotope({
+              resizable: !0,
+              filter: a,
+            }),
+              e(".isotope-filters button").removeClass("show active"),
+              e(this).addClass("show active");
+          });
+      });
+    </script>
+  </body>
 </html>
